@@ -1,0 +1,86 @@
+.reviews
+	padding-top: 82px
+	padding-bottom: 86px
+	background: #F1F6FA
+	position: relative
+	&-slider
+		.review-icon img
+			width: auto
+			display: inline
+		&-buttons
+			position: absolute
+			width: 100%
+			top: calc(50% - 6px)
+			left: 0
+			button
+				display: block
+				height: 25px
+				width: 14px
+				background: url('../img/reviews/slider-button.png') center no-repeat
+				border: none
+				position: absolute
+		&-prev
+			left: -24px
+		&-next
+			right: -24px
+			transform: rotate(180deg)
+	&::before
+		content: ''
+		display: block
+		width: 166px
+		height: 147px
+		background: url('../img/reviews/decor.png') center no-repeat
+		position: absolute
+		right: 0px
+		bottom: 242px
+	&::after
+		content: ''
+		display: block
+		width: 142px
+		height: 135px
+		background: url('../img/reviews/ice.png') center no-repeat
+		position: absolute
+		right: 86px
+		bottom: 86px
+.review
+	text-align: center
+	background: #FFF
+	box-shadow: 0px 2px 10px #D5E3EE
+	border-radius: 20px
+	margin: 0 15px
+	padding: 30px 20px
+	font-family: Jost
+	font-style: normal
+	&-icon
+		margin-bottom: 20px
+	&-name
+		font-weight: normal
+		font-size: 20px
+		color: #3D3D3D
+		margin-bottom: 10px
+	&-position
+		font-weight: normal
+		font-size: 15px
+		color: #7B7B7B
+		margin-bottom: 12px
+		min-height: 66px
+		display: flex
+		align-items: center
+	&-text
+		font-weight: 300
+		font-size: 18px
+		color: #868686
+		margin-bottom: 14px
+		max-height: 81px
+		overflow: hidden
+		&.open-review
+			max-height: none
+			overflow: visible
+	&-btn
+		font-weight: normal
+		font-size: 15px
+		text-decoration-line: underline
+		color: #53AAEC
+		cursor: pointer
+.slider-wrap
+	position: relative
