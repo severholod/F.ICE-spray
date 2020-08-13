@@ -1,0 +1,118 @@
+<!-- include "blocks/header.html" -->
+<section class="order-page">
+    <div class="container">
+        <div class="order-page-link">
+            <a href="/">Вернуться на главную</a>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 col-xl-5 d-none d-md-block">
+                <div class="order-page-img">
+                    <img src="/img/order/order-page.png" alt="Спортивная заморозка F.ICE Spray">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="order-page-content">
+                    <div class="section-title">Спортивная заморозка F.ICE Spray</div>
+                    <div class="order-page-form">
+                        <div class="form-item">
+                            <label for="weight" class="form-label">Упаковка</label>
+                            <select name="weight" id="weight" class="form-input">
+                                <option value="400 мл" data-price="400">Cпрей-заморозка 400 мл</option>
+                                <option value="600 мл" data-price="500">Cпрей-заморозка 600 мл</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <label for="quantity" class="form-label">Количество</label>
+                            <div class="quantity-wrap">
+                                <span class="minus"></span>
+                                <input type="text" name="quantity" id="quantity" value="1" class="form-input" readonly>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="price" class="form-label">Цена</label>
+                            <div class="price-wrap">
+                                <input type="text" id="price" name="price" value="400" readonly>
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <a href="#basket" class="btn btn-blue popup-lg" id="basket-open">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="popup" id="basket">
+    <div class="popup-head basket-title">Ваш заказ:</div>
+    <div class="popup-order">
+        <div class="popup-order__img"><img src="/img/order/popup-order.png" alt="Заморозка F.ICE SPRAY"></div>
+        <div class="popup-order__title">Заморозка F.ICE SPRAY</div>
+        <div class="popup-order__quantity"><span>1</span> шт.</div>
+        <div class="popup-order__weight">400 мл</div>
+        <div class="popup-order__cancel"></div>
+    </div>
+    <div class="popup-body">
+        <form action="">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-item">
+                        <input type="text" class="form-input" name="promo" id="order-promo" placeholder="Промокод">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-item">
+                        <input type="text" class="form-input" name="name" id="order-firstname" placeholder="Имя">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-item">
+                        <input type="tel" class="form-input form-tel" name="phone" id="order-phone" value="+7 ">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-item">
+                        <input type="text" class="form-input" name="name" id="order-lastname" placeholder="Фамилия">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-item">
+                        <input type="email" class="form-input" name="mail" id="order-mail" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <div class="basket-title">Выберите способ доставки:</div>
+                        <div class="form-radio">
+                            <input type="radio" name="order-delivery" id="order-delivery1"><label for="order-delivery1" class="form-label">Способ 1</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="order-delivery" id="order-delivery2"><label for="order-delivery2" class="form-label">Способ 2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <div class="basket-title">Способ оплаты:</div>
+                        <div class="form-radio">
+                            <input type="radio" name="order-pay" id="order-pay1"><label for="order-pay1" class="form-label">БАНКОВСКОЙ КАРТОЙ (Visa, Mastercard)</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="order-pay" id="order-pay2"><label for="order-pay2" class="form-label">Способ 2</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basket-price text-right">Итоговая сумма: <span id="basket-price">400 руб.</span></div>
+            <div class="form-button text-right"><button class="btn btn-blue">Оплатить заказ</button></div>
+            <div class="popup-conf text-right">
+				Нажимая на кнопку, вы соглашаетесь на обработку своих персональных
+				данных и соглашаетесь с 
+				<a href="#conf" class="popup-lg">Политикой конфиденцальности.</a>
+			</div>
+        </form>
+    </div>
+</div>
+<!-- include "blocks/footer.html" -->

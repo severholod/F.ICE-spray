@@ -15,18 +15,33 @@
 </head>
 <body>
 	<div class="overlay"></div>
-	<div class="mobile-menu"></div>
+	<div class="mobile-menu">
+		<nav class="header-nav">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="#about" class="anchor">Преимущества</a></li>
+				<li class="nav-item"><a href="#work" class="anchor">Способ применения</a></li>
+				<li class="nav-item"><a href="#order" class="anchor">Заказать</a></li>
+				<li class="nav-item"><a href="#pharmacies" class="anchor">Где купить</a></li>
+				<li class="nav-item"><a href="#reviews" class="anchor">Отзывы</a></li>
+				<li class="nav-item"><a href="#clients" class="anchor">Партнеры</a></li>
+			</ul>
+		</nav>
+		<div class="mobile-menu-soc">
+			<a href="https://vk.com" target="_blank"><img src="/img/vk.png" alt="vk"></a>
+			<a href="https://www.instagram.com/" target="_blank"><img src="/img/inst.png" alt="inst"></a>
+		</div>
+	</div>
 	<header class="header">
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-2">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-auto col-xl-2">
 					<div class="logo">
 						<div class="logo-img"><a href="/"><img src="/img/logo.png" alt="F.I.C.E"></a></div>
-						<div class="logo-title"><a href="/">спортивная заморозка</a></div>
+						<div class="logo-title d-none d-xl-block"><a href="/">спортивная заморозка</a></div>
 					</div>
 				</div>
 				<!-- /.col-2 -->
-				<div class="col-8">
+				<div class="col-8 d-none d-lg-block">
 					<nav class="header-nav">
 						<ul class="nav-list">
 							<li class="nav-item"><a href="#about" class="anchor">Преимущества</a></li>
@@ -39,13 +54,20 @@
 					</nav>
 				</div>
 				<!-- /.col-8 -->
-				<div class="col-2">
+				<div class="col-auto col-2-5 col-xl-2">
 					<div class="header-phones">
 						<a href="tel:88000000000" class="header-phone">8 (800) 000 00 00</a>
 						<a href="#call" class="header-link popup-sm">Заказать звонок</a>
 					</div>
 				</div>
 				<!-- /.col-2 -->
+				<div class="col-auto d-lg-none">
+					<div class="mobile-menu-toggler">
+						<span class="mobile-menu-toggler-line mobile-menu-toggler-line-first"></span>
+						<span class="mobile-menu-toggler-line mobile-menu-toggler-line-second"></span>
+						<span class="mobile-menu-toggler-line mobile-menu-toggler-line-third"></span>
+					</div>
+				</div>
 			</div>
 			<!-- /.row -->
 		</div>
