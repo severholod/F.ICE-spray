@@ -2,20 +2,25 @@
 	padding-top: 55px
 	padding-bottom: 10px
 	background: #F1F6FA
+	overflow: hidden	
 	&-content
 		background-image: url('../img/for-whom/bg.png')
 		background-repeat: no-repeat
-		background-position: 50% 40%
+		background-position: top
 	&-img
-		&-man img
-			transform: translateX(-12%)
+		&-man
+			padding-top: 93px
+			img
+				transform: translateX(-12%)
+	&-items
+		padding-top: 135px
 	&-item
 		margin-bottom: 55px
 		position: relative
 		&__title
 			font-family: Montserrat
 			font-weight: 500
-			font-size: 25px
+			font-size: 20px
 			color: #FFF
 			margin-bottom: 10px
 		&__ul
@@ -24,24 +29,26 @@
 			font-family: Jost;
 			font-weight: normal
 			font-size: 18px
+			line-height: 22px
 			color: #FFF
-			padding: 6px 0
+			padding: 3px 0
 			span
 				color: #5E5E5E
 	&-arrow
 		position: absolute
 		&-upper
-			top: -50px
+			top: -35px
 			transform: translateX(-50%)
 			span
-				left: -6px
+				left: 0px
 				bottom: -8px
 				transform: rotate(180deg)
 		&-lower
-			bottom: -50px
+			top: 35px
+			right: 0
 			transform: translateX(50%)
 			span
-				right: -6px
+				right: 0px
 				top: -8px
 		span
 			display: block

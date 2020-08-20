@@ -3,26 +3,15 @@
 	padding-bottom: 86px
 	background: #F1F6FA
 	position: relative
+	overflow: hidden
 	&-slider
 		.review-icon img
 			width: auto
 			display: inline
-	&::before
-		content: ''
-		display: block
-		width: 166px
-		height: 147px
-		background: url('../img/reviews/decor.png') center no-repeat
-		position: absolute
+	&-img-1
 		right: 0px
 		bottom: 300px
-	&::after
-		content: ''
-		display: block
-		width: 142px
-		height: 135px
-		background: url('../img/reviews/ice.png') center no-repeat
-		position: absolute
+	&-img-2
 		right: 70px
 		bottom: 120px
 .review
@@ -65,5 +54,9 @@
 		text-decoration-line: underline
 		color: #53AAEC
 		cursor: pointer
+		&:hover
+			color: #53AAEC
+			text-decoration: none
 .slider-wrap
 	position: relative
+	z-index: 2

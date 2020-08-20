@@ -32,8 +32,7 @@
                         <div class="form-item">
                             <label for="price" class="form-label">Цена</label>
                             <div class="price-wrap">
-                                <input type="text" id="price" name="price" value="400" readonly>
-                                <span>руб.</span>
+                                <input type="text" id="price" name="price" value="400 руб." readonly size="auto">
                             </div>
                         </div>
                     </div>
@@ -50,8 +49,9 @@
     <div class="popup-order">
         <div class="popup-order__img"><img src="/img/order/popup-order.png" alt="Заморозка F.ICE SPRAY"></div>
         <div class="popup-order__title">Заморозка F.ICE SPRAY</div>
-        <div class="popup-order__quantity"><span>1</span> шт.</div>
-        <div class="popup-order__weight">400 мл</div>
+        <!-- <div><input name="order-title" id="order-title" value="Заморозка F.ICE Spray" class="popup-order__title"></div> -->
+        <div><input name="order-quantity" id="order-quantity" value="100 шт" class="popup-order__quantity" size="4" readonly></div>
+        <div><input name="order-weight" id="order-weight" value="400 мл" class="popup-order__weight" size="4" readonly></div>
         <div class="popup-order__cancel"></div>
     </div>
     <div class="popup-body">
@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="basket-price text-right">Итоговая сумма: <span id="basket-price">400 руб.</span></div>
+            <div class="basket-price text-right">Итоговая сумма: <input id="basket-price" name="basket-price" readonly size="4"></div>
             <div class="form-button text-right"><button class="btn btn-blue">Оплатить заказ</button></div>
             <div class="popup-conf text-right">
 				Нажимая на кнопку, вы соглашаетесь на обработку своих персональных

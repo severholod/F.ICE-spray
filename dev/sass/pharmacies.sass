@@ -8,13 +8,7 @@
 		.btn
 			padding-left: 50px
 			padding-right: 50px
-	&::after
-		display: flex
-		content: ''
-		width: 141px
-		height: 135px
-		background: url('../img/pharmacies/ice.png') center no-repeat
-		position: absolute
+	.paralax-img
 		left: 84px
 		bottom: 44px
 .pharmacy
@@ -32,3 +26,23 @@
 	&-img
 		img
 			max-width: 100%
+	&-citys ul
+		display: flex
+		flex-wrap: wrap
+	&-city 
+		flex: 0 0 50%
+		max-width: 50%
+		list-style-type: none
+		padding: 0 15px
+		font-size: 14px
+		&__adress
+			padding: 15px 10px
+			p 
+				margin-bottom: 7px
+
+	&-tab
+		cursor: pointer
+		&-content
+			display: none 
+			&-active
+				display: block

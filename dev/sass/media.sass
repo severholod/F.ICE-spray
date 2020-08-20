@@ -5,15 +5,15 @@
 @media ( max-width: 1380px )
     .banner
         &-img
-            img
+            .static-img
                 width: 100%
-            &::after
-                display: none
+        &-ice3
+            display: none !important
     .forwhom
         &-img
             &-woman
                 img
-                    width: 100%
+                    // width: 100%
 @media (max-width: 1300px)
     .slider
         &-prev
@@ -25,6 +25,8 @@
         flex: 0 0 20%
         max-width: 20%
 @media (max-width: 1199px)
+    .paralax-img
+        display: none !important
     .nav
         &-item
             font-size: 13px
@@ -35,10 +37,10 @@
                 font-size: 18px
     .forwhom
         overflow: hidden
+        &-items
+            padding-top: 90px
         &-item
             margin-bottom: 30px
-            &__title
-                font-size: 22px
             &__li
                 font-size: 16px
                 padding: 3px 0
@@ -113,7 +115,12 @@
             justify-content: center
     .forwhom
         &-content
-            background-position: 50% 50%
+            background-position: 50% 0
+            background-size: 100% 100%
+        &-items
+            padding-top: 50px
+        &-img-man
+            padding-top: 75px
     .about
         &-content
             max-width: 80%
@@ -148,9 +155,12 @@
             background-image: linear-gradient(296.34deg, #1351B2 9.95%, #439DD4 39.67%, #CAE2FA 97.6%)
             border-radius: 20px
             padding: 70px 25px 0
+        &-items
+            padding-top: 0
         &-img
             margin-bottom: -130px
             text-align: center
+            padding-top: 0
             img
                 transform: translateX(0)
     .about
@@ -248,14 +258,14 @@
                 max-width: 29px
     .banner
         &-text
-            font-size: 35px;
+            font-size: 35px
             line-height: 45px
     .forwhom
         padding-left: 15px
         padding-right: 15px
         &-content
             background-image: url(../img/for-whom/bg-mobile.png)
-            background-size: cover
+            background-size: 100% 100%
         &-img
             img
                 max-width: 250px
@@ -266,6 +276,9 @@
             font-size: 14px
             padding: 12px 17px
             margin-right: 10px
+    .work
+        &-alert
+            font-size: 14px
     .step
         margin-bottom: 65px
         &-last
@@ -353,7 +366,18 @@
             padding-bottom: 550px
             background-size: cover
             background-position: 50% 80%
+    .forwhom
+        &-item
+            &__title
+                font-size: 18px
+            &__ul
+                padding-left: 5px
+            &__li
+                font-size: 14px
 @media(max-width: 370px)
+    .header
+        &-phone
+            font-size: 15px
     .about
         &-container
             padding-bottom: 500px
@@ -367,7 +391,7 @@
             font-size: 16px
     .forwhom
         &-content
-            padding: 90px 25px 0
+            padding: 70px 10px 0
     .fancybox-wrap
         width: calc(100% - 10px) !important
         left: 5px !important

@@ -51,6 +51,11 @@ $(document).ready(function(){
 			}
 		}
 	});
+	// $('.pharmacy-tab').click(function() {
+	// 	let target = $(this)[0].dataset.target
+	// 	$('.pharmacy-tab-content').removeClass('pharmacy-tab-content-active')
+	// 	$('#' + target).addClass('pharmacy-tab-content-active')
+	// })
 	/*--------------------------------------------*/
 	/*----------------Мобильное меню-------------*/
 	$('.mobile-menu-toggler, .mobile-menu .anchor, .overlay').click(function(){
@@ -170,7 +175,7 @@ $(document).ready(function(){
 	}
 	function changePrice(price, quantity) {
 		sum = price * quantity
-		$('#price').val(sum)
+		$('#price').val(sum + " руб.")
 	}
 	$('.quantity-wrap .minus').click(function() {
 		if (quantity <= 1) return false
@@ -198,9 +203,29 @@ $(document).ready(function(){
 		}
 		localStorage.setItem('order', JSON.stringify(orderObject))
 		const order = JSON.parse(localStorage.getItem('order'))
-		$('.popup-order__quantity span').text(order.quantity)
-		$('.popup-order__weight').text(order.weight)
-		$('#basket-price').text(order.sum)
+		$('.popup-order__quantity').val(order.quantity + ' шт.')
+		$('.popup-order__weight').val(order.weight)
+		$('#basket-price').val(order.sum + ' руб.')
+
+	})
+	/*------------------------------------------*/ 
+
+	/*----------------Paralax-------------------*/ 
+
+	$(window).mousemove(function(eventObject) {
+
+		// let x = (eventObject.clientX / window.innerWidth) * 13,
+		// 	y = (eventObject.clientY / window.innerHeight) * 13
+
+		let x = ((window.innerWidth / 2 - eventObject.clientX) / 100) * 1.5 * -1,
+			y = ((window.innerHeight / 2 - eventObject.clientY) / 100) * 2 * -1
+			// console.log(x, y);
+		$('.paralax-img').each((i, el) => {
+			el.style.transform = 'translate(' + x + 'px, '+ y + 'px )'
+			// setTimeout(function() {
+			// 	el.style.transition = 'none'	
+			// }, 100);
+		})
 
 	})
 	/*------------------------------------------*/ 

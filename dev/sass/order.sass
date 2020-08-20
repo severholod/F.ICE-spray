@@ -8,6 +8,7 @@
 		font-size: 24px
 		color: #868686
 		padding: 18px 0
+		display: flex
 		&-first
 			position: relative
 			&::after
@@ -19,6 +20,23 @@
 				position: absolute
 				left: 0
 				bottom: 0
+		&-new
+			color: #53AAEC
+			font-weight: 500
+			margin-right: 5px
+		&-old
+			position: relative
+			margin-right: 5px
+			&::after
+				content: ''
+				display: block
+				width: 46px
+				height: 1px
+				background: #868686
+				position: absolute
+				top: 50%
+				left: -5px
+				transform: rotate(30deg)
 	&-smalltext
 		font-family: Jost
 		font-weight: 300

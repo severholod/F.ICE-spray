@@ -40,12 +40,23 @@
 		list-style-type: none
 		border-bottom: 1.5px solid transparent
 		transition: all .3s ease
+		position: relative
 		a
 			&:hover
 					text-decoration: none
-					color: #868686
-		&:hover
-			border-bottom: 1.5px solid #868686
+					color: #7ABEF2
+		&::after
+			content: ''
+			display: block
+			width: 0
+			height: 3px
+			background: #7ABEF2
+			position: absolute
+			bottom: -4px
+			left: 0
+			transition: width .3s ease
+		&:hover::after
+			width: 100%
 .logo
 	display: flex
 	align-items: center
