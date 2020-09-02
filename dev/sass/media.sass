@@ -2,18 +2,39 @@
     .about, .offers, .info
         padding-left: 15px
         padding-right: 15px
+@media(max-width: 1499px)
+    .banner
+        padding-top: 5px
+        .static-img
+            max-width: 520px 
+    .utp
+        margin-top: 10px  
+        padding: 15px 50px 0
+        &-item
+            margin-bottom: 15px  
+    .paralax-img
+        max-width: 120px
 @media ( max-width: 1380px )
     .banner
         &-img
             .static-img
-                width: 100%
+                max-width: 450px
         &-ice3
             display: none !important
+        &-text
+            font-size: 50px
+            line-height: 60px
+        &-leaf
+            top: 120px
     .forwhom
         &-img
             &-woman
                 img
                     // width: 100%
+    .utp
+        &-wrap
+            z-index: 3
+            margin-top: -70px
 @media (max-width: 1300px)
     .slider
         &-prev
@@ -25,6 +46,12 @@
         flex: 0 0 20%
         max-width: 20%
 @media (max-width: 1199px)
+    .header
+        &-phone
+            font-size: 17px
+    .banner
+        &-text
+            margin-bottom: 30px
     .paralax-img
         display: none !important
     .nav
@@ -110,9 +137,14 @@
         &-btn
             position: relative
             z-index: 1
+        .static-img
+            max-width: 100%
     .utp
+        &-wrap
+            margin-top: -30px
         &-item
             justify-content: center
+            margin-bottom: 30px
     .forwhom
         &-content
             background-position: 50% 0
@@ -260,6 +292,13 @@
         &-text
             font-size: 35px
             line-height: 45px
+    .utp
+        &-item
+            justify-content: flex-start
+            img
+                max-width: 55px
+            &__text
+                font-size: 17px
     .forwhom
         padding-left: 15px
         padding-right: 15px

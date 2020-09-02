@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	new WOW().init();
 	/*----------------------Меню-----------------*/ 
 	$(".anchor").on("click", function(e){
 		const anchor = $(this);
@@ -202,10 +203,20 @@ $(document).ready(function(){
 			'weight': weight
 		}
 		localStorage.setItem('order', JSON.stringify(orderObject))
+		$('.popup-order').show()
 		const order = JSON.parse(localStorage.getItem('order'))
-		$('.popup-order__quantity').val(order.quantity + ' шт.')
-		$('.popup-order__weight').val(order.weight)
-		$('#basket-price').val(order.sum + ' руб.')
+		$('.popup-order__quantity').text(order.quantity + ' шт.')
+		$('.popup-order__weight').text(order.weight)
+		$('#order-quantity').val(order.quantity + ' шт.')
+		$('#order-weight').val(order.weight)
+		// $('#basket-price').val(order.sum + ' руб.')
+
+	})
+	$('.popup-order__cancel').on('click', function() {
+		let inputs = $(this).parents('.popup-order').find('input')
+		$(inputs).val('')
+		$(this).parents('.popup-order').hide()
+		localStorage.clear()
 
 	})
 	/*------------------------------------------*/ 

@@ -20,7 +20,7 @@ const uglify = require('gulp-uglify-es').default;
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
-var pngquant = require('imagemin-pngquant');
+//var pngquant = require('imagemin-pngquant');
 var critical = require('critical');
 var includer = require('gulp-x-includer');
 
@@ -46,6 +46,7 @@ gulp.task('libs-js', function() {
       // 'node_modules/bootstrap/dist/js/bootstrap.min.js',
       //'node_modules/jquery.maskedinput.min.js',
       'dev/vendor/jquery.mb-comingsoon/jquery.mb-comingsoon.min.js',
+      'node_modules/wowjs/dist/wow.min.js'
     ]),
     cached('libs-js'),
     sourcemaps.init(),
