@@ -8,6 +8,44 @@
 	z-index: 10
 	&-phones
 		text-align: right
+		&__wrap
+			position: relative
+			&::before
+				content: ''
+				display: block
+				border-top: 5px solid #3D3D3D
+				border-left: 5px solid transparent
+				border-right: 5px solid transparent
+				position: absolute
+				left: -8px
+				top: calc(50% - 2.5px)
+			&:hover .header-phones__drop
+				opacity: 1
+				visibility: visible
+		&__drop
+			position: absolute
+			width: 208px
+			top: 30px
+			right: 0
+			background: #fff
+			border-radius: 5px
+			box-shadow: 0 0 10px rgba(0,0,0,.5)
+			z-index: 5
+			opacity: 0
+			visibility: hidden
+			transition: all .3s ease
+			&-item
+				padding: 10px 20px
+				border-bottom: 1px solid #eee
+				text-align: left
+				a
+					font-family: Jost
+					font-weight: bold
+					font-size: 18px
+					color: #3D3D3D
+				p
+					margin: 0
+					color: #868686
 	&-phone
 		font-family: Jost
 		font-weight: bold
@@ -60,8 +98,10 @@
 .logo
 	display: flex
 	align-items: center
+	img
+		max-width: 87px
 	&-title
-		font-family: Montserrat
+		font-family: Rubik
 		font-weight: bold
 		font-size: 16px
 		color: #3D3D3D
@@ -72,4 +112,4 @@
 				text-decoration: none
 				color: #3d3d3d
 .padding-top
-	padding-top: 96px
+	padding-top: 111px

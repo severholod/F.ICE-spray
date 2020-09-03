@@ -46,7 +46,7 @@ gulp.task('libs-js', function() {
       // 'node_modules/bootstrap/dist/js/bootstrap.min.js',
       //'node_modules/jquery.maskedinput.min.js',
       'dev/vendor/jquery.mb-comingsoon/jquery.mb-comingsoon.min.js',
-      'node_modules/wowjs/dist/wow.min.js'
+      'node_modules/wow.js/dist/wow.min.js'
     ]),
     cached('libs-js'),
     sourcemaps.init(),

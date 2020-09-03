@@ -23,7 +23,12 @@
             display: none !important
         &-text
             font-size: 50px
-            line-height: 60px
+            line-height: 55px
+            margin-bottom: 18px
+        &-subtitle
+            margin-bottom: 18px
+            font-size: 18px
+            line-height: 22px
         &-leaf
             top: 120px
     .forwhom
@@ -49,9 +54,6 @@
     .header
         &-phone
             font-size: 17px
-    .banner
-        &-text
-            margin-bottom: 30px
     .paralax-img
         display: none !important
     .nav
@@ -122,6 +124,10 @@
             display: none
         &-nav
             margin-bottom: 40px
+        &-phones
+            &__wrap
+                &::before
+                    left: -15px
     .nav
         &-list
             padding: 0
@@ -165,17 +171,19 @@
             text-align: center
     .footer
         .logo
-            justify-content: center
+            text-align: center
             margin-bottom: 25px
-            &-title
-                max-width: 110px
+            &-img
+                margin-bottom: 20px
+            .footer-item__text
+                margin: 0 auto
 @media(max-width: 767px)
     .banner
-        padding-top: 40px
+        padding-top: 35px
         &-content
             margin-bottom: 31px
         &-text
-            margin-bottom: 38px
+            //margin-bottom: 38px
     .utp
         &-wrap
             &::before
@@ -291,7 +299,7 @@
     .banner
         &-text
             font-size: 35px
-            line-height: 45px
+            line-height: 40px
     .utp
         &-item
             justify-content: flex-start
@@ -311,10 +319,15 @@
                 transform: translateX(-21px)
     .about
         padding-top: 60px
+        &-buttons
+            flex-wrap: wrap
+            margin-bottom: 15px
+            justify-content: center
         &-btn
             font-size: 14px
             padding: 12px 17px
             margin-right: 10px
+            margin-bottom: 12px
     .work
         &-alert
             font-size: 14px
@@ -390,12 +403,20 @@
                 top: 15px
                 right: 0
 @media(max-width: 450px)
-    .logo
-        img
-            max-width: 55px
+
     .header
+        .logo
+            img
+                max-width: 55px
         &-phone
             font-size: 16px
+        &-phones
+            &__drop
+                width: 180px
+                &-item
+                    a, p
+                        font-size: 15px
+
     .padding-top
         padding-top: 79px
     .mobile-menu
@@ -416,7 +437,7 @@
 @media(max-width: 370px)
     .header
         &-phone
-            font-size: 15px
+            font-size: 14px
     .about
         &-container
             padding-bottom: 500px
